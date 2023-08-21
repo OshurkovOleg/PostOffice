@@ -12,17 +12,15 @@ public class PostalDepartmentEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long id;
+    private long id;
 
     @Column
-    String index;
+    private String index;
 
     @Column
-    long name;
+    private long name;
 
     @Column
-    String address;
-/*
-адрес почтового отделения
-*/
+    private String address;
+
 }
