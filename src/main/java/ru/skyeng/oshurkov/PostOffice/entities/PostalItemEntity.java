@@ -11,8 +11,8 @@ import lombok.ToString;
 public class PostalItemEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SQ_TAGS_ID")
-    @SequenceGenerator(name = "SQ_TAGS_ID", sequenceName = "SQ_TAGS_ID", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sq_postal_items")
+    @SequenceGenerator(name = "sq_postal_items", sequenceName = "sq_postal_items", allocationSize = 1)
     private long id;
 
     @Column(name = "track_number")
@@ -22,7 +22,7 @@ public class PostalItemEntity {
     private String type;
 
     @Column
-    private long index;
+    private int index;
 
     @Column
     private String address;

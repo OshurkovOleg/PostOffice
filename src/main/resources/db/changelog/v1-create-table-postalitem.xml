@@ -26,7 +26,7 @@
                 <constraints nullable="false"/>
             </column>
         </createTable>
-        <createSequence sequenceName="SQ_TAGS_ID" incrementBy="1" startValue="1"/>
+        <createSequence sequenceName="sq_postal_items" incrementBy="1" startValue="1"/>
 
     </changeSet>
 
